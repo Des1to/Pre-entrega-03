@@ -155,3 +155,28 @@ div {
 h4 {
     text-align: center;
 }
+
+/* Estilos para la sección de álbumes */
+#Albumes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Espaciado entre los divs */
+}
+
+.album {
+    width: calc(50% - 50px); 
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+/* Estilos para pantallas más pequeñas (responsivo) */
+@media screen and (max-width: 768px) {
+    .album {
+        width: 100%; /* Ancho del 100% para mostrar un div debajo del otro en pantallas más pequeñas */
+    }
+}
+
+.img-small {
+    max-width: 1100px;
+}
